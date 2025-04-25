@@ -12,8 +12,21 @@ const handleEdit= () => {
 };
 
   return (
-    <div>TaskItem</div>
-  )
+    <div>
+    {isEditing ? (
+      <input
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+    ) : (
+      <span>{task.text}</span>
+    )}
+    <button onClick={handleEdit}>
+      {isEditing ? "Save" : "Edit"}
+    </button>
+    <button onClick={() => deleteTask(task.id)}>Delete</button>
+  </div>
+  );
 }
 
 export default TaskItem
