@@ -5,6 +5,12 @@ function TaskForm({addTask}) {
         e.preventDefault();
         addTask(input);
         setInput("");
-    }
+    };
+
+    return (
+        <form onSubmit = {handleSubmit}>
+
+        </form>
+    )
     
 }
