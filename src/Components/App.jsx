@@ -6,5 +6,5 @@ function name(params) {
             <h1>TaskTrackr</h1>
             <TaskForm tasks={tasks} deleteTask={...} editTask={...}/>
         </div>
-    )
+    );
 }
