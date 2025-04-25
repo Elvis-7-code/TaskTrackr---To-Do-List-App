@@ -10,6 +10,7 @@ function TaskForm({addTask}) {
     return (
         <form onSubmit = {handleSubmit}>
             <input value={input} onChange={(e) => setInput(e.target.value)} />
+            <button type="submit">Add</button>
 
         </form>
     )
